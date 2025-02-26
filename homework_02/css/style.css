@@ -1,0 +1,45 @@
+.main {
+    width: 720px;
+    /* задаем ширину блока */
+    background-color: grey;
+    /* цвет фона блока */
+    border-radius: 10px;
+    /* закругление краев блока */
+    padding: 10px;
+    /* внутренние отступы для всего содержимого в блоке */
+}
+
+h3 {
+    color: white;
+    /* цвет текста заголовка */
+}
+
+li {
+    border-radius: 5px;
+    width: 600px;
+    border: 3px groove blue;
+    margin: 8px;
+    padding: 8px;
+    /* для каждого элемента списка: ограничиваем ширину, обводим границу, при этом задаем цвет, радиус стиль (рамка с тенью),  добавляем отступы внутренние и внешние */
+}
+
+/* каждому элементу списка задаем свой цвет бэкграунда: */
+.el1 {
+    background-color: azure;
+}
+
+.el2 {
+    background-color: beige;
+}
+
+.el3 {
+    background-color: blanchedalmond;
+}
+
+.el4 {
+    background-color: aquamarine;
+}
+
+.el5 {
+    background-color: aqua;
+}

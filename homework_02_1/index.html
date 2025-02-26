@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание 2.1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="border_radius_6px">
+        <!-- создаем контейнер, в котором располагаем форму для авторизации -->
+        <!-- создаем форму для авторизации пользователя -->
+        <form action="#" name="authorization">
+
+            <!-- название формы в окне для авторизации при помощи заголовка 2 уровня -->
+            <h2>Авторизация</h2>
+
+            <!-- создаем 2 текстовых поля text и password -->
+            <input class="border_radius_6px" type="text" name="login" placeholder="Логин" required>
+            <input class="border_radius_6px" type="password" name="password" placeholder="Пароль" required>
+
+            <br> <!-- переводим кнопки отправка данных и сброс на новою строку  -->
+            <!-- создаем 2 кнопки: отправка данных и сброс -->
+            <input class="border_radius_6px" type="submit" value="Войти">
+            <input class="border_radius_6px reset" type="reset" value="Очистить поля">
+
+            <br> <!-- переводим чекбокс на новою строку  -->
+            <!-- создаем чекбокс -->
+            <input class="check" id="checkRemember" type="checkbox" name="remember">
+            <!-- создаем лейбл и привязываем его к чекбоксу -->
+            <label for="checkRemember">Запомнить меня</label>
+        </form>
+
+    </div>
+</body>
+
+</html>
