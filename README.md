@@ -297,9 +297,7 @@ _Использовала_ **grid**
 
 ## homework_15_1
 
-### Учебный проект
-
-**Todo-list**
+### Учебный проект Todo-list
 
 [Макет проекта](<https://www.figma.com/design/h7ecVRqH6mqrf2JYkCyb0C/To-do-list-(Community)?node-id=0-1&p=f&t=qsB4AhaPu99Qnnp4-0>)
 
@@ -313,14 +311,16 @@ _Использовала_ **grid**
 ## homework_16
 
 ### Задание 1
+
 Используя синтаксис async/await отправить get запрос на https://jsonplaceholder.typicode.com/todos/1. Результат вывести в консоль.
 
 ### Задание 2
-Используя синтаксис async/await отправить get запрос на https://jsonplaceholder.typicode.com/posts. Ответ должен содержать 10 элементов (query-параметр _limit). Результат вывести в консоль.
+
+Используя синтаксис async/await отправить get запрос на https://jsonplaceholder.typicode.com/posts. Ответ должен содержать 10 элементов (query-параметр \_limit). Результат вывести в консоль.
 
 ## homework_16_1
 
-### Задание 1 
+### Задание 1
 
 Используя синтаксис try/catch, отправить запрос на https://jsonplaceholder.typicode.com/posts?userId=1, в блоке catch сделать вывод консоль сообщения об ошибке. Для проверки блока catch сделать намеренную ошибку в url запроса.
 
@@ -334,6 +334,7 @@ _Использовала_ **grid**
 
 Создать переменную и использовать ее в стилях.
 Требования:
+
 - Создайте переменную с именем primary-color и присвойте ей значение #FF0000.
 - Используйте переменную primary-color для установки цвета текста в элементе с классом .heading.
 
