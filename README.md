@@ -63,3 +63,6 @@
 Для смены состояний использовать анимированный переход.
 
 ![alt text](image-3.png)
+
+## homework_5
+![alt text](image-5.png)
