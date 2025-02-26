@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.user-cards {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.user-cards ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.user-info {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-info:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user-info h3 {
+    margin: 0 0 10px;
+    color: #343a40;
+}
+
+.user-info p {
+    margin: 5px 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.box {
+    width: 135px;
+    height: 112px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 135px); /* Колонки під ширину елементів */
+    grid-auto-rows: 112px; /* Фіксована висота рядків */
+    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: space-between; /* Аналог flex-space-between */
+    gap: 16px; /* Відстань між елементами */
+}
+
