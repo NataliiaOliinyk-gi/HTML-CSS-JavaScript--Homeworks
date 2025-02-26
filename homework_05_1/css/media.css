@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+    section {
+        gap: 16px;
+        padding: 0;
+    }
+
+    .navigation {
+        min-width: 180px;
+        border-radius: 0;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    .main-content h1 {
+        line-height: 32.2px;
+        font-size: 28px;
+    }
+
+    .main-content p {
+        line-height: 20.7px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    section {
+        gap: 0;
+        padding: 0;
+    }
+
+    .navigation {
+        min-width: 48px;
+        border-radius: 0;
+        padding: 8px 8px 0;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    .menu li {
+        height: 32px;
+    }
+
+    .menu a {
+        color: transparent;
+    }
+
+    .main-content {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .main-content h1 {
+        line-height: 27.7px;
+        font-size: 18px;
+    }
+
+    .main-content p {
+        line-height: 18.4px;
+        font-size: 16px;
+    }
+}
