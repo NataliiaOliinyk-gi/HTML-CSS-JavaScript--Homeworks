@@ -76,3 +76,13 @@
 Сверстать 3 экран макета из прошлых уроков.
 
 [Макет](https://www.figma.com/file/siI1IXw74fX9Q5c4NqJHPn/Untitled?type=design&node-id=0%3A1&mode=design&t=MiyGFGUF5xBDKgJI-1)
+
+## homework_06
+
+В макет из прошлого задания (4 экран) добавить в боковое меню произвольные иконки (bootstrap icons, fontawesome, material symbols/icons).
+
+[Макет](https://www.figma.com/file/siI1IXw74fX9Q5c4NqJHPn/Untitled?type=design&node-id=0%3A1&mode=design&t=MiyGFGUF5xBDKgJI-1)
+
+## homework_06_1
+
+## homework_06_2
