@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание 12</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="column">
+            <h2>Регистрация</h2>
+            <form id="registrationForm" class="column">
+                <div class="container-for-blockForm column">
+                    <div class="container-for-input row">
+                        <label for="userNameForm">Имя</label>
+                        <input type="text" name="userName" id="userNameForm" required>
+                    </div>
+                    <div class="container-for-input row">
+                        <label for="userTelForm">Телефон</label>
+                        <input type="tel" name="userTel" id="userTelForm" required>
+                    </div>
+                    <div class="container-for-input row">
+                        <label for="userEmailForm">Email</label>
+                        <input type="email" name="userEmail" id="userEmailForm" required>
+                    </div>
+                    <div class="container-for-input row">
+                        <label for="userPasswordForm">Пароль</label>
+                        <input type="password" name="userPassword" id="userPasswordForm" required>
+                    </div>
+                </div>
+                <div class="container-for-button">
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
+
+            <h2>Авторизация</h2>
+            <form id="loginForm" class="column">
+                <div class="container-for-blockForm column">
+                    <div class="container-for-input row">
+                        <label for="userEmailLogin">Email</label>
+                        <input type="email" name="userEmail" id="userEmailLogin" required>
+                    </div>
+                    <div class="container-for-input row">
+                        <label for="userPasswordLogin">Пароль</label>
+                        <input type="password" name="userPassword" id="userPasswordLogin" required>
+                    </div>
+                </div>
+                <div class="container-for-button">
+                    <button type="submit">Войти</button>
+                </div>
+            </form>
+
+            <div class="message">
+                <p class="fail"></p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
