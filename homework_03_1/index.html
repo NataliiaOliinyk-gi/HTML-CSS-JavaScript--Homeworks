@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание 3.1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="form-user-registration">
+        <!-- создаем контейнер для формы -->
+        <!-- создаем саму форму -->
+        <form action="#" name="userRegistration">
+            <!-- делим форму на логические блоки fieldset-->
+            <fieldset class="user-name">
+                <!-- присваиваем название филдсету -->
+                <legend>Имя</legend>
+                <!-- создаем контейнер для инпутов Фамилия и Имя-->
+                <div class="div-fieldset">
+                    <!-- для инпутов Фамилия и Имя задаем ограничение символов от2 до 50 и обозначаем поля обязательными для заполнения-->
+                    <input type="text" name="userSurname" required placeholder="Фамилия" minlength="2" maxlength="50">
+                    <input type="text" name="userName" required placeholder="Имя" minlength="2" maxlength="50">
+                </div>
+            </fieldset>
+
+            <!-- создаем контейнер для двух филдсетов Пол и Рассылка -->
+            <div class="subscribe">
+                <!-- создаем филдсет для логического блока Пол-->
+                <fieldset class="user-gender">
+                    <!-- присваиваем название филдсету  Пол-->
+                    <legend>Пол</legend>
+                     <!-- создаем дивы для инпутов типа радио-->
+                    <div class="div-radio">
+                        <input id="radioGenderMan" type="radio" name="gender" value="man" required>
+                        <label for="radioGenderMan">Мужской</label>
+                    </div>
+                    <div class="div-radio">
+                        <input id="radioGenderWoman" type="radio" name="gender" value="woman">
+                        <label for="radioGenderWoman">Женский</label>
+                    </div>
+                    <div class="div-radio">
+                        <input id="radioGenderOther" type="radio" name="gender" value="other">
+                        <label for="radioGenderOther">Не хочу говорить</label>
+                    </div>
+                </fieldset>
+                <!-- создаем филдсет для логического блока Рассылка-->
+                <fieldset class="user-subscribe">
+                    <!-- задаем название филдсету -->
+                    <legend>Получать рассылку по</legend>
+                    <!-- создаем дивы для инпутов типа чекбокс-->
+                    <div class="div-checkbox">
+                        <input id="checkboxSubscribeEmail" type="checkbox" name="subscribeEmail">
+                        <label for="checkboxSubscribeEmail">Email</label>
+                    </div>
+                    <div class="div-checkbox">
+                        <input id="checkboxSubscribeSms" type="checkbox" name="subscribeSms">
+                        <label for="checkboxSubscribeSms">SMS</label>
+                    </div>
+                </fieldset>
+            </div>
+            <!-- создаем контейнер для кнопки -->
+            <div class="button">
+                <!-- создаем кнопку с типом submit для отправки данных формы на сервер -->
+                <button type="submit">Отправить</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
