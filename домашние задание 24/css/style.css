@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#openButton {
+    margin: 40px;
+}
+
+#myDialog {
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    /* Добавление градиента для фона диалогового окна */
+    /* 135deg - угол наклона заливки градиента */
+    background: linear-gradient(135deg, #ff9a9e, #f8d4ca);
+
+    top: calc(100% - 50% - 52px);
+    left: calc(100% - 50% - 160px);
+}
+
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ff4f4f;
+}
+
+/* Стилизация фона диалогового окна (затемнения) */
+/* и анимация затемнения фона */
+#myDialog::backdrop {
+    background-color: #a9898980;
+    animation: fadeInBackdrop 0.3s ease-out forwards;
+}
+
+@keyframes fadeInBackdrop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Анимация открытия диалогового окна */
+dialog[open] {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Анимация закрытия */
+dialog.closing {
+    animation: fadeOut 0.3s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
