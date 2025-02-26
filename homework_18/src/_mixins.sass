@@ -1,0 +1,22 @@
+
+@mixin button-styles($background-color, $color)
+    padding: 10px 20px
+    background-color: $background-color
+    color: $color
+
+
+@mixin vertical-flex
+    display: flex
+    flex-direction: column
+    gap: 16px
+    align-items: center
+
+@mixin adaptive-container($max-width, $width)
+    @media (max-width: $max-width) 
+        width: $width
+    
+    
+    
+    
+
+    

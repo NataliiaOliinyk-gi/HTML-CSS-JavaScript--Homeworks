@@ -1,0 +1,41 @@
+/* sass src/style.sass dist/style.css */
+// sass --watch src:dist
+// для автоматического отслеживания изменений в файле style.sass и компиляции в файл style.css 
+
+// Задание 1
+// Создать адаптивный контейнер для содержимого на веб-странице. Создайте переменную, представляющую ширину контейнера, необходимо установить разную ширину контейнера в зависимости от размера экрана устройства. Изначальная ширина контейнера 960px, если ширина экрана меньше 768px, то ширина контейнера должна быть равна 100%.
+
+// Задание 2 
+// Создать миксин для установки стилей кнопки. 
+// Требования: Создайте миксин с именем button-styles, который принимает два аргумента: background-color и color. Используйте аргументы миксина для установки соответствующих стилей кнопки. Примените миксин к кнопке с классом .button.
+
+@use 'variables'
+@use 'reset'
+@use 'math'
+@use 'mixins'
+
+.container-adaptive
+    width: variables.$container-width
+    margin: 0 auto
+    padding: 40px 10px
+    @include mixins.adaptive-container(768px, 100%)
+
+%button-shared
+    background-color: variables.$main-color
+    color: variables.$white-color
+    border-radius: variables.$border-radius
+    border: 2px solid variables.$main-color
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5)
+    transition: all 400ms
+    cursor: pointer
+
+.my-button
+    @include mixins.button-styles(#5e3aef, #ece4e4)
+    @extend %button-shared
+    margin: 20px 0
+    &:hover
+        background-color: variables.$second-color
+        border-color: variables.$second-color
+
+.box
+    @include mixins.vertical-flex

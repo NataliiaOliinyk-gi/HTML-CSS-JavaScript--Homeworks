@@ -1,0 +1,47 @@
+/* sass src/style.sass dist/style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-adaptive {
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+@media (max-width: 768px) {
+  .container-adaptive {
+    width: 100%;
+  }
+}
+
+.my-button {
+  background-color: #8e75ef;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #8e75ef;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+.my-button {
+  padding: 10px 20px;
+  background-color: #5e3aef;
+  color: #ece4e4;
+  margin: 20px 0;
+}
+.my-button:hover {
+  background-color: #ff3c00;
+  border-color: #ff3c00;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
