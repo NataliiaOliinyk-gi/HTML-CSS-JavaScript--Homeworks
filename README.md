@@ -69,7 +69,7 @@
 
 ## homework_05
 
-![alt text](image-5.png)
+![alt text](image-4.png)
 
 ## homework_05_1
 
